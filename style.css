@@ -1,46 +1,119 @@
 .container{
     display: grid;
-    grid-template-columns: 1fr 4fr;
-    grid-template-rows: 1fr 6fr;
+    grid-template-columns: 1fr 6fr;
+    grid-template-rows: 1fr 8fr;
     font-family: Lato, sans-serif;
 }
 .header {
-    background-color: aquamarine;
+    background-color:#64748b;
     display: grid;
     grid-column: 2 / 3;
     grid-row: 1/2;
+    padding: 20px;
+    color: white;
+    gap: 20px;
+    
+    
 }
 .sidebar{
-    background-color:#64748b;
+    background-color:#500724;
     grid-column: 1 /2 ;
     grid-row: 1/3;
     display: grid;
     color: #f8fafc;
 }
+
+.content{
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows: 20px ;
+    background-color:#cbd5e1 ;
+    gap: 20px;
+    padding: 20px;
+
+}
+
+.projects{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-column: 1/2;
+    gap:20px;
+}
 li{
     list-style: none;
 }
 
+.upperheader {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    align-self: center;
+}
+
+.upperheader .left {
+    display: flex;
+    justify-content: space-between
+}
+.upperheader .right {
+    display: flex;
+    justify-content: flex-end;
+}
+
+
+.lowerheader{
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    align-self: center;
+}
+
+.lowerheader .left {
+display: flex;
+
+}
+
+.lowerheader .right{
+    display: flex;
+    justify-content: space-around;
+}
 .inputfield{
-background-color: #94a3b8;
-width:c400px;
+background-color: #e2e8f0;
+flex: 0.8;
+border-radius: 5px;
+
 }
 
 .button_blue{
-    background-color: #3f6212;
+    background-color: #500724;
     color: azure;
-    width: 50px;
+    width: fit-content;
+    height: fit-content;
     border-radius: 5px;
-    padding: 10px;
+    padding:  10px 20px 10px 20px ;
+    text-align: center;
 }
 
 img{
-    width: 16px;
+    width: 25px;
     height: auto;
    
 }
 
 .card {
+    display: flex;
+    flex:1;
+    flex-direction: column;
+    background-color: #f8fafc;
+    height: 200px;
+    padding: 10px;
+
+}
+.card_container {
+    display: flex;
+  justify-content: flex-end;
+  gap: 5px;
+}
+.card img{
+    display: flex;
+   flex-direction:row ;
 
 }
 
