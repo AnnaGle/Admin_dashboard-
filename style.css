@@ -4,10 +4,7 @@ body{
 .container{
     display: grid;
     grid-template-columns: 1fr 6fr;
-    grid-template-rows: 1fr 7fr;
     font-family: Lato, sans-serif;
-    height:120vh;
-
 }
 .header {
     background-color:#f8fafc;
@@ -30,12 +27,13 @@ body{
     justify-items:center;
     
 }
+
+
 .dashboard{
     display: flex;
     
 }
 .sidebar ul * {
-    padding: 10px;
     margin: 0;
     padding-inline-start: 0px;
 }
@@ -55,14 +53,16 @@ body{
 
 }
 
+.w-100{
+    width: 100%;
+}
+
 .projects{
+    height: 94%;
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap:20px;
-    align-content: space-between;
-    height: 800px;
-    
- 
+    align-content: space-between;   
 }
 li{
     list-style: none;
@@ -100,7 +100,7 @@ gap: 20px;
 
 .lowerheader .right{
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-self: center;
 }
 .inputfield{
